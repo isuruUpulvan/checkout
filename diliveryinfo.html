@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Delivery Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="address.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+
+</head>
+<body>
+
+<section class="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    Billing Address
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="fname">Full Name</label>
+      <input type="text" class="form-control" id="fname" name="fname" placeholder="Wasantha hettiarachchi" required>
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+  </form>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="emailClient">Email Address</label>
+      <input type="email" class="form-control" id="emailClient" name="emailClient"  placeholder="wasnthag@gmail.com" required>
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+      <label for="mobileNum">Contact Number</label>
+      <input type="text" class="form-control" id="mobileNum" name="mobileNum" placeholder="077 1234 123" required>
+    </div>
+    </form>
+    <div class="form-group">
+      <label for="addressClient">Address</label>
+      <input type="text" class="form-control" id="addressClient" name="addressClient" placeholder="No 3 ..........">
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <form class="form-inline">
+    <div class="form-group ">
+      <label for="cityClient">City</label>
+      <input type="text" class="form-control" id="cityClient" name="cityClient"  placeholder="kohuwala" required>
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+      <label for="stateClient">State</label>
+      <input type="text" class="form-control" id="stateClient" name="stateClient"  placeholder="western"required>
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-check row">
+      <div class="col-sm-1">
+      <input class="form-check-input" type="radio" name="radiobtn" id="cashradio" value="cash" required>
+      </div>
+      <div class="col-sm-3">
+      <label class="form-check-lbl" style="text-align: left;" for="cashradio">Cash on delivery</label>
+      </div>
+      <div class="col-sm-1">
+        <input class="form-check-input" type="radio" name="radiobtn" id="cardradio" value="card" required>
+      </div>
+        <div class="col-sm-4">
+        <label class="form-check-lbl" style="text-align: left;"  for="cardradio">Online card payment</label>
+        </div>
+    </div>
+    </form>
+  <div class="bb-title" style="margin-bottom: 10px;"> 
+      <a href="#myModal"  data-toggle="modal"><button class="nxt-button"><span>Next</span></button></a>    <!-- </form> -->
+    <button class="nxt-button" style="float: left;" onclick="location.href = 'index.html';"><span>Back</span></button>
+  </div>
+
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="icon-box">
+            <i class="material-icons">&#xE876;</i>
+          </div>				
+          <h4 class="modal-title">Awesome!</h4>	
+        </div>
+        <div class="modal-body">
+          <p class="text-center">Your order has been confirmed. Check your email for detials.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success btn-block" onclick="location.href = 'index.html';">OK</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- <a href="#myModal" class="trigger-btn" data-toggle="modal"> -->
+  <!-- <div class="next-button"></div>
+    <a class="main_btn" href="#">Next</a>
+  </div> -->
+</section>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
